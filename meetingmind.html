@@ -1007,7 +1007,8 @@ function resetAll() {
   document.getElementById('photoInput').value = '';
   photoBase64 = null; photoMimeType = null; fullOutputText = '';
   document.getElementById('outputWrap').classList.remove('active');
-  document.getElementById('errorBox').classList.remove('active');
+  
+document.getElementById('errorBox').classList.remove('active');
   switchTab('voice');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 } 
